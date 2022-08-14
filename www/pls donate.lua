@@ -5,7 +5,7 @@ v:Disable()
 end
 wait(5)
 if string.find(identifyexecutor(), "Synapse X") then
-syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/yawninlol/scripts/blob/main/www/pls%20donate'))()")
+syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/yawninlol/scripts/main/www/pls%20donate.lua'))()")
 else
 game.StarterGui:SetCore("SendNotification", {
 Title = "Not using Synapse X";
