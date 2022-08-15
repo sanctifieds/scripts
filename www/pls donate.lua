@@ -87,9 +87,9 @@ local boothText
 function update(text)
 if Raised.Value > 999 then
 text = string.format("%.1fk", text / 10^3)
-boothText = tostring('<font color="#E286EB">DONATE IF YOU LOVE LATINAS</font>')
+boothText = tostring('<font color="#E286EB">GOAL: '.. text.. '</font>')
 else
-boothText = tostring('<font color="#E286EB">DONATE IF YOU LOVE LATINAS</font>')
+boothText = tostring('<font color="#E286EB">GOAL: '.. Raised.value.. ' / '.. text.. '</font>')
 end
 require(game.ReplicatedStorage.Remotes).Event("SetBoothText"):FireServer(boothText, "booth")
 end
