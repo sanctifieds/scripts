@@ -75,7 +75,7 @@ if isfile("plsdonatesettings.txt") then
     getgenv().settings = httpservice:JSONDecode(readfile('plsdonatesettings.txt'))
 end
 local sNames = {"textUpdateToggle", "textUpdateDelay", "serverHopToggle", "serverHopDelay", "hexBox", "goalBox", "webhookToggle", "webhookBox", "danceToggle", "thanksMessage", "signToggle", "customBoothText", "signUpdateToggle", "signText", "signHexBox", "autoThanks", "autoBeg", "begMessage", "begDelay", "fpsLimit", "render"}
-local sValues = {true, 30, true, 30, "#E286EB", 5, false, "", false, {"Thank you", "Thanks!", "ty :)", "tysm!"}, false, "GOAL: $C / $G", false, "your text here", "#ffffff", true, false, {"Please donate", "I'm so close to my goal!", "donate to me", "please"}, 300, 60, false}
+local sValues = {true, 30, true, 30, "#32CD32", 5, false, "", false, {"Thank you", "Thanks!", "ty :)", "tysm!"}, false, "GOAL: $C / $G", false, "your text here", "#ffffff", true, false, {"Please donate", "I'm so close to my goal!", "donate to me", "please"}, 300, 60, false}
 if #getgenv().settings ~= sNames then
     for i, v in ipairs(sNames) do
         if getgenv().settings[v] == nil then
